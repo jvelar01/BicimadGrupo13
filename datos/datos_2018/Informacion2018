@@ -1,0 +1,126 @@
+RESULTADOS 2018 GENERAL:
+Estadísticas de salida y entrada de bicicletas por días 
+
+La estación de la que salen más bicicletas para los Lunes es 64 y han salido 6220 bicis
+La estación de la que salen más bicicletas para los Martes es 90 y han salido 6613 bicis
+La estación de la que salen más bicicletas para los Miércoles es 90 y han salido 6611 bicis
+La estación de la que salen más bicicletas para los Jueves es 90 y han salido 6917 bicis
+La estación de la que salen más bicicletas para los Viernes es 90 y han salido 6123 bicis
+La estación de la que salen más bicicletas para los Sábado es 90 y han salido 5134 bicis
+La estación de la que salen más bicicletas para los Domingo es 64 y han salido 5010 bicis
+
+
+La estación en la que llegan más bicicletas para los Lunes es 64 y han llegado 2537 bicis
+La estación en la que llegan más bicicletas para los Martes es 64 y han llegado 2570 bicis
+La estación en la que llegan más bicicletas para los Miércoles es 64 y han llegado 2455 bicis
+La estación en la que llegan más bicicletas para los Jueves es 64 y han llegado 2520 bicis
+La estación en la que llegan más bicicletas para los Viernes es 64 y han llegado 2285 bicis
+La estación en la que llegan más bicicletas para los Sábado es 64 y han llegado 2010 bicis
+La estación en la que llegan más bicicletas para los Domingo es 64 y han llegado 1708 bicis
+
+ Estadísticas de salida y entrada de bicicletas por tipo de usuario 
+
+Los tipos de usuarios son: 
+
+0: No se ha podido determinar el tipo de usuario 
+
+1: Usuario anual (poseedor de un pase anual 
+
+2: Usuario ocasional 
+
+3: Trabajador de la empresa 
+
+La estación de la que salen más bicicletas para el tipo de usuario 0 es 64 y han salido 81 bicis
+La estación de la que salen más bicicletas para el tipo de usuario 1 es 90 y han salido 39818 bicis
+La estación de la que salen más bicicletas para el tipo de usuario 2 es 64 y han salido 3861 bicis
+La estación de la que salen más bicicletas para el tipo de usuario 3 es 82 y han salido 8159 bicis
+
+
+La estación a la que llegan más bicicletas para el tipo de usuario 0 es 64 y han salido 40 bicis
+La estación a la que llegan más bicicletas para el tipo de usuario 1 es 64 y han salido 12289 bicis
+La estación a la que llegan más bicicletas para el tipo de usuario 2 es 64 y han salido 2132 bicis
+La estación a la que llegan más bicicletas para el tipo de usuario 3 es 162 y han salido 1846 bicis
+
+ Estadísticas de salida y entrada de bicicletas por edades 
+
+Los grupos de edades son: 
+
+0: No se ha podido determinar el rango de edad del usuario 
+
+1: El usuario tiene entre 0 y 16 años 
+
+2: El usuario tiene entre 17 y 18 años 
+
+3: El usuario tiene entre 19 y 26 años 
+
+4: El usuario tiene entre 27 y 40 años 
+
+5: El usuario tiene entre 41 y 65 años 
+
+6: El usuario tiene 66 años o más 
+
+La estación de la que salen más bicicletas para el grupo de edad 0 es 64 y han salido 17341 bicis
+La estación de la que salen más bicicletas para el grupo de edad 1 es 64 y han salido 791 bicis
+La estación de la que salen más bicicletas para el grupo de edad 2 es 81 y han salido 560 bicis
+La estación de la que salen más bicicletas para el grupo de edad 3 es 83 y han salido 2564 bicis
+La estación de la que salen más bicicletas para el grupo de edad 4 es 90 y han salido 13221 bicis
+La estación de la que salen más bicicletas para el grupo de edad 5 es 83 y han salido 9889 bicis
+La estación de la que salen más bicicletas para el grupo de edad 6 es 86 y han salido 307 bicis
+
+
+La estación en la que llegan más bicicletas para el grupo de edad 0 es 64 y han llegado 7015 bicis
+La estación en la que llegan más bicicletas para el grupo de edad 1 es 78 y han llegado 382 bicis
+La estación en la que llegan más bicicletas para el grupo de edad 2 es 76 y han llegado 318 bicis
+La estación en la que llegan más bicicletas para el grupo de edad 3 es 78 y han llegado 1015 bicis
+La estación en la que llegan más bicicletas para el grupo de edad 4 es 90 y han llegado 4142 bicis
+La estación en la que llegan más bicicletas para el grupo de edad 5 es 64 y han llegado 4075 bicis
+La estación en la que llegan más bicicletas para el grupo de edad 6 es 73 y han llegado 231 bicis
+
+ Uso según la edad 
+
+Los grupos de edades y las bicicletas que utilizan son:                         
+
+El grupo de edad 5 usó 153705 bicicletas
+El grupo de edad 0 usó 195259 bicicletas
+El grupo de edad 4 usó 193838 bicicletas
+El grupo de edad 3 usó 41683 bicicletas
+El grupo de edad 2 usó 8414 bicicletas
+El grupo de edad 1 usó 10033 bicicletas
+El grupo de edad 6 usó 3601 bicicletas
+la media de tiempo que se utilizan las bicicletas según el rango de edad es:    
+El grupo de edad 0 usó de media 21.929792992896616 minutos las bicicletas
+El grupo de edad 1 usó de media 42.70607661384099 minutos las bicicletas
+El grupo de edad 2 usó de media 15.226436098565882 minutos las bicicletas
+El grupo de edad 3 usó de media 16.192941966749036 minutos las bicicletas
+El grupo de edad 4 usó de media 18.84291358419574 minutos las bicicletas
+El grupo de edad 5 usó de media 21.049657243854572 minutos las bicicletas
+El grupo de edad 6 usó de media 25.03375451263538 minutos las bicicletas
+
+ Estadísticas de uso de bicicletas por tipo de usuario 
+
+Los tipos de usuarios y las bicicletas que utilizan son:                        
+
+el tipo de usuario 3 usó 67164 bicicletas
+el tipo de usuario 1 usó 526100 bicicletas
+el tipo de usuario 2 usó 12882 bicicletas
+el tipo de usuario 0 usó 387 bicicletas
+la media de tiempo que se utilizan las bicicletas según el tipo de usuario es:  
+El tipo de usuario 1 usó de media 39.86425495262704 minutos las bicicletas
+El tipo de usuario 2 usó de media 14.91746531077742 minutos las bicicletas
+El tipo de usuario 3 usó de media 50.728309527506084 minutos las bicicletas
+El tipo de usuario 4 usó de media 59.177742540646776 minutos las bicicletas
+
+Evolución de usuarios anual
+en el mes 1 del año se utilizaron 43827 bicicletas                              
+en el mes 2 del año se utilizaron 39299 bicicletas
+en el mes 3 del año se utilizaron 35110 bicicletas
+en el mes 4 del año se utilizaron 48967 bicicletas
+en el mes 5 del año se utilizaron 48207 bicicletas
+en el mes 6 del año se utilizaron 54449 bicicletas
+en el mes 7 del año se utilizaron 62022 bicicletas
+en el mes 8 del año se utilizaron 44126 bicicletas
+en el mes 9 del año se utilizaron 71023 bicicletas
+en el mes 10 del año se utilizaron 63948 bicicletas
+en el mes 11 del año se utilizaron 50097 bicicletas
+en el mes 12 del año se utilizaron 45458 bicicletas
+
