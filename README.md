@@ -1,6 +1,6 @@
 # BiciMAD Group 13
 
-This is the Bicimad assignment by Pablo Fernández, Gabriel Alba amd Joaquín Velarde.
+This is the Bicimad assignment by Pablo Fernández, Gabriel Alba and Joaquín Velarde.
 
 
 # BICIMAD Data Analysis
