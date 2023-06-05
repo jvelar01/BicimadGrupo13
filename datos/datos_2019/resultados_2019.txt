@@ -1,0 +1,105 @@
+
+Los datos no serán filtrados por temporada.
+
+Estadísticas de uso de bicicletas por día:
+
+La estación con más salidas los lunes es la estación 64 con 1411 salidas.
+La estación con más salidas los martes es la estación 64 con 1588 salidas.
+La estación con más salidas los miércoles es la estación 64 con 1466 salidas.
+La estación con más salidas los jueves es la estación 64 con 1480 salidas.
+La estación con más salidas los viernes es la estación 64 con 1600 salidas.
+La estación con más salidas los sábados es la estación 90 con 1104 salidas.
+La estación con más salidas los domingos es la estación 90 con 994 salidas.
+
+La estación con más llegadas los lunes es la estación 90 con 3620 llegadas.
+La estación con más llegadas los martes es la estación 90 con 3996 llegadas.
+La estación con más llegadas los miércoles es la estación 90 con 3716 llegadas.
+La estación con más llegadas los jueves es la estación 90 con 4169 llegadas.
+La estación con más llegadas los viernes es la estación 90 con 4041 llegadas.
+La estación con más llegadas los sábados es la estación 90 con 3369 llegadas.
+La estación con más llegadas los domingos es la estación 90 con 3198 llegadas.
+
+Estadísticas de uso de bicicletas por tipo de usuario:
+
+Los tipos de usuarios son:
+
+0: No se pudo determinar el tipo de usuario.
+1: Usuario anual (poseedor de un pase anual).
+2: Usuario ocasional.
+3: Trabajador de una empresa.
+
+La estación con más salidas para el tipo de usuario 0 es la estación 64 con 66 salidas.
+La estación con más salidas para el tipo de usuario 1 es la estación 90 con 24583 salidas.
+La estación con más salidas para el tipo de usuario 2 es la estación 64 con 1939 salidas.
+La estación con más salidas para el tipo de usuario 3 es la estación 82 con 3907 salidas.
+
+La estación donde más llegan bicicletas para el tipo de usuario 0 es la estación 64 con 4722 llegadas.
+La estación donde más llegan bicicletas para el tipo de usuario 1 es la estación 83 con 257 llegadas.
+La estación donde más llegan bicicletas para el tipo de usuario 2 es la estación 78 con 155 llegadas.
+La estación donde más llegan bicicletas para el tipo de usuario 3 es la estación 78 con 569 llegadas.
+
+Estadísticas de uso de bicicletas por grupos de edad:
+
+Los grupos de edad son:
+
+0: No se pudo determinar el grupo de edad del usuario.
+1: El usuario tiene entre 0 y 16 años.
+2: El usuario tiene entre 17 y 18 años.
+3: El usuario tiene entre 19 y 26 años.
+4: El usuario tiene entre 27 y 40 años.
+5: El usuario tiene entre 41 y 65 años.
+6: El usuario tiene 66 años o más.
+
+La estación desde la cual más bicicletas salen para el grupo de edad 0 es la estación 90 y han salido 11694 bicicletas.
+La estación desde la cual más bicicletas salen para el grupo de edad 1 es la estación 91 y han salido 634 bicicletas.
+La estación desde la cual más bicicletas salen para el grupo de edad 2 es la estación 75 y han salido 403 bicicletas.
+La estación desde la cual más bicicletas salen para el grupo de edad 3 es la estación 83 y han salido 1375 bicicletas.
+La estación desde la cual más bicicletas salen para el grupo de edad 4 es la estación 90 y han salido 6895 bicicletas.
+La estación desde la cual más bicicletas salen para el grupo de edad 5 es la estación 90 y han salido 5754 bicicletas.
+La estación desde la cual más bicicletas salen para el grupo de edad 6 es la estación 90 y han salido 206 bicicletas.
+
+La estación donde más bicicletas llegan para el grupo de edad 0 es la estación 64 y han llegado 4722 bicicletas.
+La estación donde más bicicletas llegan para el grupo de edad 1 es la estación 83 y han llegado 257 bicicletas.
+La estación donde más bicicletas llegan para el grupo de edad 2 es la estación 78 y han llegado 155 bicicletas.
+La estación donde más bicicletas llegan para el grupo de edad 3 es la estación 78 y han llegado 569 bicicletas.
+La estación donde más bicicletas llegan para el grupo de edad 4 es la estación 90 y han llegado 2301 bicicletas.
+La estación donde más bicicletas llegan para el grupo de edad 5 es la estación 64 y han llegado 2545 bicicletas.
+La estación donde más bicicletas llegan para el grupo de edad 6 es la estación 73 y han llegado 158 bicicletas.
+
+Uso según la edad:
+
+Los grupos de edad y las bicicletas que utilizan son:
+
+El grupo de edad 0 utilizó 137145 bicicletas.
+El grupo de edad 5 utilizó 92961 bicicletas.
+El grupo de edad 4 utilizó 95037 bicicletas.
+El grupo de edad 2 utilizó 2975 bicicletas.
+El grupo de edad 3 utilizó 20858 bicicletas.
+El grupo de edad 1 utilizó 4716 bicicletas.
+El grupo de edad 6 utilizó 2200 bicicletas.
+
+El tiempo promedio que se utilizan las bicicletas según el rango de edad es:
+
+El grupo de edad 0 utilizó las bicicletas en promedio durante 24.13684932006271 minutos.
+El grupo de edad 1 utilizó las bicicletas en promedio durante 50.456389595702575 minutos.
+El grupo de edad 2 utilizó las bicicletas en promedio durante 12.78703081232493 minutos.
+El grupo de edad 3 utilizó las bicicletas en promedio durante 19.72907117972321 minutos.
+El grupo de edad 4 utilizó las bicicletas en promedio durante 17.787249878117645 minutos.
+El grupo de edad 5 utilizó las bicicletas en promedio durante 21.11470813925553 minutos.
+El grupo de edad 6 utilizó las bicicletas en promedio durante 25.81872727272727 minutos.
+
+Estadísticas de uso de bicicletas por tipo de usuario:
+
+Los tipos de usuarios y las bicicletas que utilizan son:
+
+El tipo de usuario 1 utilizó 312178 bicicletas.
+El tipo de usuario 3 utilizó 37015 bicicletas.
+El tipo de usuario 2 utilizó 6300 bicicletas.
+El tipo de usuario 0 utilizó 399 bicicletas.
+
+El tiempo promedio que se utilizan las bicicletas según el tipo de usuario es:
+
+El tipo de usuario 1 utilizó las bicicletas en promedio durante 47.30643274853801 minutos.
+El tipo de usuario 2 utilizó las bicicletas en promedio durante 14.46565768034049 minutos.
+El tipo de usuario 3 utilizó las bicicletas en promedio durante 51.99265873015873 minutos.
+El tipo de usuario 4 utilizó las bicicletas en promedio durante 76.87570624521591 minutos.

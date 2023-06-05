@@ -1,0 +1,6 @@
+En el mes 1 del año, se utilizaron 47,683 bicicletas.
+En el mes 2 del año, se utilizaron 52,320 bicicletas.
+En el mes 3 del año, se utilizaron 61,397 bicicletas.
+En el mes 4 del año, se utilizaron 49,298 bicicletas.
+En el mes 5 del año, se utilizaron 69,888 bicicletas.
+En el mes 6 del año, se utilizaron 75,306 bicicletas.
