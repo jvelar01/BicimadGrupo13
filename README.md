@@ -21,7 +21,7 @@ This repository contains data and scripts related to the analysis of BICIMAD, a 
 - `Memoria_Práctica_BICIMAD___PRPA.pdf`: This PDF document provides a comprehensive overview of the study conducted on BICIMAD data. It includes an explanation of the data analysis process, methodologies used, and the insights gained from the analysis. The document also presents a business case based on the findings.
 
 - `bicimad.py`: This Python script (inside `programa`) was utilized to extract and process the BICIMAD data using the PySpark framework. The script includes various functions and algorithms to clean, transform, and analyze the data, providing valuable insights into the usage patterns and trends of the BICIMAD system.
-It requires a folder bicimad_data by its side with the information we want to analyze. 
+It requires a folder `bicimad_data` by its side with the information we want to analyze. 
 
 - `Cluster_Ejecucion.png`: This image shows the upload and execution of the script in the Raspberries PI Cluster
 
