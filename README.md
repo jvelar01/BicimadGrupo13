@@ -14,6 +14,8 @@ This repository contains data and scripts related to the analysis of BICIMAD, a 
 
 - `datos_2018`: This folder (inside `datos`) contains the data extracted from the registers of BICIMAD for the year 2018. Similar to the previous file, it includes timestamp, user ID, bicycle ID, station ID, and additional details.
 
+- `datos_2019`: This folder (inside `datos`) contains the data extracted from the registers of BICIMAD for the first six month of the year 2019. Similar to the previous file, it includes timestamp, user ID, bicycle ID, station ID, and additional details.
+
 - `pruebasMarzo2019`: This file (inside `datos`) contains the data extracted from the registers of BICIMAD for the year 2018. Similar to the previous file, it includes timestamp, user ID, bicycle ID, station ID, and additional details.
 
 - `Memoria_Práctica_BICIMAD___PRPA.pdf`: This PDF document provides a comprehensive overview of the study conducted on BICIMAD data. It includes an explanation of the data analysis process, methodologies used, and the insights gained from the analysis. The document also presents a business case based on the findings.
