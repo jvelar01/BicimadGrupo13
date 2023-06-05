@@ -5,7 +5,7 @@ This is the Bicimad assignment by Pablo Fernández, Gabriel Alba amd Joaquín Ve
 
 # BICIMAD Data Analysis
 
-This repository contains data and scripts related to the analysis of BICIMAD, a public bicycle sharing system in Madrid, Spain. The repository includes a folder, `data`, which contains the extracted information from the registers of BICIMAD for the years 2017 and 2018, and of March of 2019. Additionally, the repository includes a PDF document, `Memoria_Práctica_BICIMAD___PRPA.pdf`, which provides a detailed explanation of the study and the business case, showcasing the insights obtained from the analysis. The folder `programa` contains all the necessary items to execute the analysis, although we had problems importing the json documents, as they are too heavy. 
+This repository contains data and scripts related to the analysis of BICIMAD, a public bicycle sharing system in Madrid, Spain. The repository includes a folder, `datos`, which contains the extracted information from the registers of BICIMAD for the years 2017 and 2018, and of March of 2019. Additionally, the repository includes a PDF document, `Memoria_Práctica_BICIMAD___PRPA.pdf`, which provides a detailed explanation of the study and the business case, showcasing the insights obtained from the analysis. The folder `programa` contains all the necessary items to execute the analysis, although we had problems importing the json documents, as they are too heavy. 
 
 ## Files
 - `datos`: This folder contains all the information we extracted from our analysis
