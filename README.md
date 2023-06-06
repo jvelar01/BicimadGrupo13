@@ -7,7 +7,7 @@ This is the Bicimad assignment by Pablo Fernández, Gabriel Alba and Joaquín Ve
 
 This repository contains data and scripts related to the analysis of BICIMAD, a public bicycle sharing system in Madrid, Spain. The repository includes a folder, `datos`, which contains the extracted information from the registers of BICIMAD for the years 2017 and 2018, and of March of 2019. Additionally, the repository includes a PDF document, `Memoria_Práctica_BICIMAD___PRPA.pdf`, which provides a detailed explanation of the study and the business case, showcasing the insights obtained from the analysis. The folder `program` contains all the necessary items to execute the analysis. 
 
-In the folder `program` the user will find two files. This is in case the user does not want to use the Raspberries PI cluster. In case the user wants to use the cluster, he or she must use the python script by the name of `bicimad_cluster.py` inside this folder. If not, he must use the other file.
+In the folder `program` the user will find two files. This is in case the user does not want to use the Raspberries PI cluster. In case the user wants to use the cluster, he must use the python script by the name of `bicimad_cluster.py` inside this folder. If not, he must use the other file.
 
 ## Files
 - `Ejecucion_cluster`: This txt file shows the upload and execution of the script in the Raspberries PI Cluster.
