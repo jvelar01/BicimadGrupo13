@@ -5,10 +5,14 @@ This is the Bicimad assignment by Pablo Fernández, Gabriel Alba and Joaquín Ve
 
 # BICIMAD Data Analysis
 
-This repository contains data and scripts related to the analysis of BICIMAD, a public bicycle sharing system in Madrid, Spain. The repository includes a folder, `datos`, which contains the extracted information from the registers of BICIMAD for the years 2017 and 2018, and of March of 2019. Additionally, the repository includes a PDF document, `Memoria_Práctica_BICIMAD___PRPA.pdf`, which provides a detailed explanation of the study and the business case, showcasing the insights obtained from the analysis. The folder `programa` contains all the necessary items to execute the analysis, although we had problems importing the json documents, as they are too heavy. 
+This repository contains data and scripts related to the analysis of BICIMAD, a public bicycle sharing system in Madrid, Spain. The repository includes a folder, `datos`, which contains the extracted information from the registers of BICIMAD for the years 2017 and 2018, and of March of 2019. Additionally, the repository includes a PDF document, `Memoria_Práctica_BICIMAD___PRPA.pdf`, which provides a detailed explanation of the study and the business case, showcasing the insights obtained from the analysis. The folder `program` contains all the necessary items to execute the analysis. 
+
+In the folder `program` the user will find two files. This is in case the user does not want to use the Raspberries PI cluster. In case the user wants to use the cluster, he or she must use the python script by the name of `bicimad_cluster` inside this folder. 
 
 ## Files
-- `datos`: This folder contains all the information we extracted from our analysis
+- `Ejecucion_cluster`: This txt file shows the upload and execution of the script in the Raspberries PI Cluster.
+
+- `datos`: This folder contains all the information we extracted from our analysis locally.
 
 - `datos_2017`: This folder (inside `datos`) contains the data extracted from the registers of BICIMAD for the year 2017. It includes various attributes such as timestamp, user ID, bicycle ID, station ID, and other relevant information.
 
@@ -22,8 +26,6 @@ This repository contains data and scripts related to the analysis of BICIMAD, a 
 
 - `bicimad.py`: This Python script (inside `programa`) was utilized to extract and process the BICIMAD data using the PySpark framework. The script includes various functions and algorithms to clean, transform, and analyze the data, providing valuable insights into the usage patterns and trends of the BICIMAD system.
 It requires a folder `bicimad_data` by its side with the information we want to analyze. 
-
-- `Ejecucion_cluster`: This txt file shows the upload and execution of the script in the Raspberries PI Cluster
 
 ## Usage
 
