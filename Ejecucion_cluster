@@ -1,0 +1,1113 @@
+pabfer19@wild:~/Bicimad$ hdfs dfs -put bicimad.py
+pabfer19@wild:~/Bicimad$ python3 bicimad.py
+In the year 2017 
+2023-06-06 16:58:46,429 INFO spark.SparkContext: Running Spark version 3.3.1
+2023-06-06 16:58:46,490 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-06-06 16:58:46,570 INFO resource.ResourceUtils: ==============================================================
+2023-06-06 16:58:46,571 INFO resource.ResourceUtils: No custom resources configured for spark.driver.
+2023-06-06 16:58:46,571 INFO resource.ResourceUtils: ==============================================================
+2023-06-06 16:58:46,571 INFO spark.SparkContext: Submitted application: Routes
+2023-06-06 16:58:46,586 INFO resource.ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2023-06-06 16:58:46,596 INFO resource.ResourceProfile: Limiting resource is cpu
+2023-06-06 16:58:46,596 INFO resource.ResourceProfileManager: Added ResourceProfile id: 0
+2023-06-06 16:58:46,635 INFO spark.SecurityManager: Changing view acls to: pabfer19
+2023-06-06 16:58:46,637 INFO spark.SecurityManager: Changing modify acls to: pabfer19
+2023-06-06 16:58:46,638 INFO spark.SecurityManager: Changing view acls groups to: 
+2023-06-06 16:58:46,638 INFO spark.SecurityManager: Changing modify acls groups to: 
+2023-06-06 16:58:46,638 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(pabfer19); groups with view permissions: Set(); users  with modify permissions: Set(pabfer19); groups with modify permissions: Set()
+2023-06-06 16:58:46,849 INFO util.Utils: Successfully started service 'sparkDriver' on port 46545.
+2023-06-06 16:58:46,868 INFO spark.SparkEnv: Registering MapOutputTracker
+2023-06-06 16:58:46,893 INFO spark.SparkEnv: Registering BlockManagerMaster
+2023-06-06 16:58:46,906 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2023-06-06 16:58:46,907 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+2023-06-06 16:58:46,910 INFO spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+2023-06-06 16:58:46,926 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-7990b310-b56c-4d47-a821-5080a7bafec1
+2023-06-06 16:58:46,937 INFO memory.MemoryStore: MemoryStore started with capacity 434.4 MiB
+2023-06-06 16:58:46,949 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+2023-06-06 16:58:46,982 INFO util.log: Logging initialized @1753ms to org.sparkproject.jetty.util.log.Slf4jLog
+2023-06-06 16:58:47,058 INFO server.Server: jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 11.0.18+10-post-Debian-1deb11u1
+2023-06-06 16:58:47,074 INFO server.Server: Started @1846ms
+2023-06-06 16:58:47,099 INFO server.AbstractConnector: Started ServerConnector@5879bab5{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2023-06-06 16:58:47,099 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+2023-06-06 16:58:47,123 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3b94007e{/,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,267 INFO client.StandaloneAppClient$ClientEndpoint: Connecting to master spark://192.168.135.1:7077...
+2023-06-06 16:58:47,309 INFO client.TransportClientFactory: Successfully created connection to /192.168.135.1:7077 after 20 ms (0 ms spent in bootstraps)
+2023-06-06 16:58:47,369 INFO cluster.StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20230606165847-0068
+2023-06-06 16:58:47,371 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20230606165847-0068/0 on worker-20230602154813-147.96.20.35-41603 (147.96.20.35:41603) with 8 core(s)
+2023-06-06 16:58:47,373 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20230606165847-0068/0 on hostPort 147.96.20.35:41603 with 8 core(s), 1024.0 MiB RAM
+2023-06-06 16:58:47,373 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20230606165847-0068/1 on worker-20230606141729-192.168.135.21-33251 (192.168.135.21:33251) with 4 core(s)
+2023-06-06 16:58:47,373 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20230606165847-0068/1 on hostPort 192.168.135.21:33251 with 4 core(s), 1024.0 MiB RAM
+2023-06-06 16:58:47,374 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20230606165847-0068/2 on worker-20230606141729-192.168.135.23-41131 (192.168.135.23:41131) with 4 core(s)
+2023-06-06 16:58:47,374 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20230606165847-0068/2 on hostPort 192.168.135.23:41131 with 4 core(s), 1024.0 MiB RAM
+2023-06-06 16:58:47,374 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20230606165847-0068/3 on worker-20230606141729-192.168.135.14-35759 (192.168.135.14:35759) with 4 core(s)
+2023-06-06 16:58:47,375 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20230606165847-0068/3 on hostPort 192.168.135.14:35759 with 4 core(s), 1024.0 MiB RAM
+2023-06-06 16:58:47,375 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20230606165847-0068/4 on worker-20230606141731-192.168.135.22-33345 (192.168.135.22:33345) with 4 core(s)
+2023-06-06 16:58:47,375 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20230606165847-0068/4 on hostPort 192.168.135.22:33345 with 4 core(s), 1024.0 MiB RAM
+2023-06-06 16:58:47,376 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20230606165847-0068/5 on worker-20230606141729-192.168.135.11-41545 (192.168.135.11:41545) with 4 core(s)
+2023-06-06 16:58:47,376 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20230606165847-0068/5 on hostPort 192.168.135.11:41545 with 4 core(s), 1024.0 MiB RAM
+2023-06-06 16:58:47,376 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20230606165847-0068/6 on worker-20230606163833-192.168.135.15-36627 (192.168.135.15:36627) with 4 core(s)
+2023-06-06 16:58:47,377 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20230606165847-0068/6 on hostPort 192.168.135.15:36627 with 4 core(s), 1024.0 MiB RAM
+2023-06-06 16:58:47,377 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 43321.
+2023-06-06 16:58:47,378 INFO netty.NettyBlockTransferService: Server created on wild.mat.ucm.es:43321
+2023-06-06 16:58:47,379 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2023-06-06 16:58:47,384 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, wild.mat.ucm.es, 43321, None)
+2023-06-06 16:58:47,387 INFO storage.BlockManagerMasterEndpoint: Registering block manager wild.mat.ucm.es:43321 with 434.4 MiB RAM, BlockManagerId(driver, wild.mat.ucm.es, 43321, None)
+2023-06-06 16:58:47,389 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, wild.mat.ucm.es, 43321, None)
+2023-06-06 16:58:47,390 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, wild.mat.ucm.es, 43321, None)
+2023-06-06 16:58:47,410 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20230606165847-0068/0 is now RUNNING
+2023-06-06 16:58:47,589 INFO history.SingleEventLogFileWriter: Logging events to file:/opt/spark/current/events/app-20230606165847-0068.inprogress
+2023-06-06 16:58:47,713 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20230606165847-0068/5 is now RUNNING
+2023-06-06 16:58:47,735 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20230606165847-0068/3 is now RUNNING
+2023-06-06 16:58:47,764 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20230606165847-0068/2 is now RUNNING
+2023-06-06 16:58:47,770 INFO handler.ContextHandler: Stopped o.s.j.s.ServletContextHandler@3b94007e{/,null,STOPPED,@Spark}
+2023-06-06 16:58:47,773 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@29627e68{/jobs,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,774 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7b943408{/jobs/json,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,775 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@541778c2{/jobs/job,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,776 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@33ce1a6d{/jobs/job/json,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,777 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1b053879{/stages,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,777 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@95d82f3{/stages/json,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,779 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@306e8ccd{/stages/stage,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,780 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2f9fd970{/stages/stage/json,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,780 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5657a400{/stages/pool,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,781 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1cd3640e{/stages/pool/json,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,782 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3f4f7cda{/storage,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,783 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@46975e80{/storage/json,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,783 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4bcf3b31{/storage/rdd,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,784 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6be2e24e{/storage/rdd/json,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,785 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4707bc90{/environment,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,786 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@426472bb{/environment/json,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,787 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@550e99b8{/executors,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,788 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4a35df01{/executors/json,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,792 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7e4a2cc6{/executors/threadDump,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,793 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1dca39a0{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,802 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2815e15e{/static,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,804 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3c17c616{/,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,806 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7756896d{/api,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,807 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@56890284{/jobs/job/kill,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,808 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@15842ced{/stages/stage/kill,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,814 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1c51c875{/metrics/json,null,AVAILABLE,@Spark}
+2023-06-06 16:58:47,817 INFO cluster.StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+2023-06-06 16:58:47,870 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20230606165847-0068/1 is now RUNNING
+2023-06-06 16:58:47,933 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20230606165847-0068/4 is now RUNNING
+Processing file: /user/pabfer19/Bicimad/201704_Usage_Bicimad.json
+2023-06-06 16:58:48,313 INFO memory.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 307.6 KiB, free 434.1 MiB)
+2023-06-06 16:58:48,378 INFO memory.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 51.9 KiB, free 434.0 MiB)
+2023-06-06 16:58:48,380 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on wild.mat.ucm.es:43321 (size: 51.9 KiB, free: 434.3 MiB)
+2023-06-06 16:58:48,383 INFO spark.SparkContext: Created broadcast 0 from textFile at NativeMethodAccessorImpl.java:0
+2023-06-06 16:58:48,588 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20230606165847-0068/6 is now RUNNING
+2023-06-06 16:58:49,187 INFO mapred.FileInputFormat: Total input files to process : 1
+Processing file: /user/pabfer19/Bicimad/201705_Usage_Bicimad.json
+2023-06-06 16:58:49,267 INFO memory.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 307.6 KiB, free 433.7 MiB)
+2023-06-06 16:58:49,285 INFO memory.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 51.9 KiB, free 433.7 MiB)
+2023-06-06 16:58:49,286 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on wild.mat.ucm.es:43321 (size: 51.9 KiB, free: 434.3 MiB)
+2023-06-06 16:58:49,286 INFO spark.SparkContext: Created broadcast 1 from textFile at NativeMethodAccessorImpl.java:0
+2023-06-06 16:58:49,317 INFO mapred.FileInputFormat: Total input files to process : 1
+Processing file: /user/pabfer19/Bicimad/201706_Usage_Bicimad.json
+2023-06-06 16:58:49,329 INFO memory.MemoryStore: Block broadcast_2 stored as values in memory (estimated size 307.6 KiB, free 433.4 MiB)
+2023-06-06 16:58:49,348 INFO memory.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 51.9 KiB, free 433.3 MiB)
+2023-06-06 16:58:49,349 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on wild.mat.ucm.es:43321 (size: 51.9 KiB, free: 434.2 MiB)
+2023-06-06 16:58:49,350 INFO spark.SparkContext: Created broadcast 2 from textFile at NativeMethodAccessorImpl.java:0
+2023-06-06 16:58:49,380 INFO mapred.FileInputFormat: Total input files to process : 1
+2023-06-06 16:58:49,384 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.135.1:9866
+2023-06-06 16:58:49,385 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.135.14:9866
+Processing file: /user/pabfer19/Bicimad/201707_Usage_Bicimad.json
+2023-06-06 16:58:49,394 INFO memory.MemoryStore: Block broadcast_3 stored as values in memory (estimated size 307.6 KiB, free 433.0 MiB)
+2023-06-06 16:58:49,410 INFO memory.MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 51.9 KiB, free 433.0 MiB)
+2023-06-06 16:58:49,411 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on wild.mat.ucm.es:43321 (size: 51.9 KiB, free: 434.2 MiB)
+2023-06-06 16:58:49,412 INFO spark.SparkContext: Created broadcast 3 from textFile at NativeMethodAccessorImpl.java:0
+2023-06-06 16:58:49,436 INFO mapred.FileInputFormat: Total input files to process : 1
+Processing file: /user/pabfer19/Bicimad/201708_Usage_Bicimad.json
+2023-06-06 16:58:49,444 INFO memory.MemoryStore: Block broadcast_4 stored as values in memory (estimated size 307.6 KiB, free 432.7 MiB)
+2023-06-06 16:58:49,455 INFO memory.MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 51.9 KiB, free 432.6 MiB)
+2023-06-06 16:58:49,456 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on wild.mat.ucm.es:43321 (size: 51.9 KiB, free: 434.1 MiB)
+2023-06-06 16:58:49,457 INFO spark.SparkContext: Created broadcast 4 from textFile at NativeMethodAccessorImpl.java:0
+2023-06-06 16:58:49,475 INFO mapred.FileInputFormat: Total input files to process : 1
+Processing file: /user/pabfer19/Bicimad/201709_Usage_Bicimad.json
+2023-06-06 16:58:49,482 INFO memory.MemoryStore: Block broadcast_5 stored as values in memory (estimated size 307.6 KiB, free 432.3 MiB)
+2023-06-06 16:58:49,493 INFO memory.MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 51.9 KiB, free 432.3 MiB)
+2023-06-06 16:58:49,494 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on wild.mat.ucm.es:43321 (size: 51.9 KiB, free: 434.1 MiB)
+2023-06-06 16:58:49,494 INFO spark.SparkContext: Created broadcast 5 from textFile at NativeMethodAccessorImpl.java:0
+2023-06-06 16:58:49,515 INFO mapred.FileInputFormat: Total input files to process : 1
+Processing file: /user/pabfer19/Bicimad/201710_Usage_Bicimad.json
+2023-06-06 16:58:49,527 INFO memory.MemoryStore: Block broadcast_6 stored as values in memory (estimated size 307.6 KiB, free 432.0 MiB)
+2023-06-06 16:58:49,544 INFO memory.MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 51.9 KiB, free 431.9 MiB)
+2023-06-06 16:58:49,545 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on wild.mat.ucm.es:43321 (size: 51.9 KiB, free: 434.0 MiB)
+2023-06-06 16:58:49,546 INFO spark.SparkContext: Created broadcast 6 from textFile at NativeMethodAccessorImpl.java:0
+2023-06-06 16:58:49,574 INFO mapred.FileInputFormat: Total input files to process : 1
+Processing file: /user/pabfer19/Bicimad/201711_Usage_Bicimad.json
+2023-06-06 16:58:49,587 INFO memory.MemoryStore: Block broadcast_7 stored as values in memory (estimated size 307.6 KiB, free 431.6 MiB)
+2023-06-06 16:58:49,605 INFO memory.MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 51.9 KiB, free 431.6 MiB)
+2023-06-06 16:58:49,606 INFO storage.BlockManagerInfo: Added broadcast_7_piece0 in memory on wild.mat.ucm.es:43321 (size: 51.9 KiB, free: 434.0 MiB)
+2023-06-06 16:58:49,607 INFO spark.SparkContext: Created broadcast 7 from textFile at NativeMethodAccessorImpl.java:0
+2023-06-06 16:58:49,613 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (147.96.20.35:51620) with ID 0,  ResourceProfileId 0
+2023-06-06 16:58:49,638 INFO mapred.FileInputFormat: Total input files to process : 1
+2023-06-06 16:58:49,640 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.135.1:9866
+2023-06-06 16:58:49,641 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.135.21:9866
+Processing file: /user/pabfer19/Bicimad/201712_Usage_Bicimad.json
+2023-06-06 16:58:49,647 INFO memory.MemoryStore: Block broadcast_8 stored as values in memory (estimated size 307.6 KiB, free 431.3 MiB)
+2023-06-06 16:58:49,664 INFO memory.MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 51.9 KiB, free 431.2 MiB)
+2023-06-06 16:58:49,665 INFO storage.BlockManagerInfo: Added broadcast_8_piece0 in memory on wild.mat.ucm.es:43321 (size: 51.9 KiB, free: 433.9 MiB)
+2023-06-06 16:58:49,666 INFO spark.SparkContext: Created broadcast 8 from textFile at NativeMethodAccessorImpl.java:0
+2023-06-06 16:58:49,705 INFO mapred.FileInputFormat: Total input files to process : 1
+2023-06-06 16:58:49,707 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.135.1:9866
+2023-06-06 16:58:49,707 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.135.11:9866
+2023-06-06 16:58:49,707 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.135.15:9866
+2023-06-06 16:58:49,768 INFO storage.BlockManagerMasterEndpoint: Registering block manager 147.96.20.35:45073 with 434.4 MiB RAM, BlockManagerId(0, 147.96.20.35, 45073, None)
+2023-06-06 16:58:49,793 INFO spark.SparkContext: Starting job: countByKey at /home/pabfer19/Bicimad/bicimad.py:176
+2023-06-06 16:58:49,812 INFO scheduler.DAGScheduler: Got job 0 (countByKey at /home/pabfer19/Bicimad/bicimad.py:176) with 83 output partitions
+2023-06-06 16:58:49,813 INFO scheduler.DAGScheduler: Final stage: ResultStage 0 (countByKey at /home/pabfer19/Bicimad/bicimad.py:176)
+2023-06-06 16:58:49,813 INFO scheduler.DAGScheduler: Parents of final stage: List()
+2023-06-06 16:58:49,817 INFO scheduler.DAGScheduler: Missing parents: List()
+2023-06-06 16:58:49,823 INFO scheduler.DAGScheduler: Submitting ResultStage 0 (PythonRDD[38] at countByKey at /home/pabfer19/Bicimad/bicimad.py:176), which has no missing parents
+2023-06-06 16:58:49,875 INFO memory.MemoryStore: Block broadcast_9 stored as values in memory (estimated size 29.4 KiB, free 431.2 MiB)
+2023-06-06 16:58:49,879 INFO memory.MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 8.8 KiB, free 431.2 MiB)
+2023-06-06 16:58:49,879 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on wild.mat.ucm.es:43321 (size: 8.8 KiB, free: 433.9 MiB)
+2023-06-06 16:58:49,880 INFO spark.SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1513
+2023-06-06 16:58:49,891 INFO scheduler.DAGScheduler: Submitting 83 missing tasks from ResultStage 0 (PythonRDD[38] at countByKey at /home/pabfer19/Bicimad/bicimad.py:176) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+2023-06-06 16:58:49,892 INFO scheduler.TaskSchedulerImpl: Adding task set 0.0 with 83 tasks resource profile 0
+2023-06-06 16:58:49,934 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (147.96.20.35, executor 0, partition 0, ANY, 4768 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:49,939 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1) (147.96.20.35, executor 0, partition 1, ANY, 4768 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:49,939 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2) (147.96.20.35, executor 0, partition 2, ANY, 4768 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:49,940 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3) (147.96.20.35, executor 0, partition 3, ANY, 4768 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:49,940 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4) (147.96.20.35, executor 0, partition 4, ANY, 4768 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:49,941 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5) (147.96.20.35, executor 0, partition 5, ANY, 4768 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:49,941 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6) (147.96.20.35, executor 0, partition 6, ANY, 4768 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:49,942 INFO scheduler.TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7) (147.96.20.35, executor 0, partition 7, ANY, 4768 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:50,236 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on 147.96.20.35:45073 (size: 8.8 KiB, free: 434.4 MiB)
+2023-06-06 16:58:50,460 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 147.96.20.35:45073 (size: 51.9 KiB, free: 434.3 MiB)
+2023-06-06 16:58:54,816 INFO scheduler.TaskSetManager: Starting task 8.0 in stage 0.0 (TID 8) (147.96.20.35, executor 0, partition 8, ANY, 4753 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:54,824 INFO scheduler.TaskSetManager: Finished task 7.0 in stage 0.0 (TID 7) in 4881 ms on 147.96.20.35 (executor 0) (1/83)
+2023-06-06 16:58:54,837 INFO python.PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 55041
+2023-06-06 16:58:55,037 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 147.96.20.35:45073 (size: 51.9 KiB, free: 434.3 MiB)
+2023-06-06 16:58:55,276 INFO scheduler.TaskSetManager: Starting task 9.0 in stage 0.0 (TID 9) (147.96.20.35, executor 0, partition 9, ANY, 4753 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:55,277 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 5361 ms on 147.96.20.35 (executor 0) (2/83)
+2023-06-06 16:58:55,564 INFO scheduler.TaskSetManager: Starting task 10.0 in stage 0.0 (TID 10) (147.96.20.35, executor 0, partition 10, ANY, 4753 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:55,564 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 5623 ms on 147.96.20.35 (executor 0) (3/83)
+2023-06-06 16:58:55,793 INFO scheduler.TaskSetManager: Starting task 11.0 in stage 0.0 (TID 11) (147.96.20.35, executor 0, partition 11, ANY, 4753 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:55,794 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 5856 ms on 147.96.20.35 (executor 0) (4/83)
+2023-06-06 16:58:55,922 INFO scheduler.TaskSetManager: Starting task 12.0 in stage 0.0 (TID 12) (147.96.20.35, executor 0, partition 12, ANY, 4753 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:55,924 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 5984 ms on 147.96.20.35 (executor 0) (5/83)
+2023-06-06 16:58:56,137 INFO scheduler.TaskSetManager: Starting task 13.0 in stage 0.0 (TID 13) (147.96.20.35, executor 0, partition 13, ANY, 4753 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:56,137 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 6196 ms on 147.96.20.35 (executor 0) (6/83)
+2023-06-06 16:58:56,185 INFO scheduler.TaskSetManager: Starting task 14.0 in stage 0.0 (TID 14) (147.96.20.35, executor 0, partition 14, ANY, 4753 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:56,186 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 6247 ms on 147.96.20.35 (executor 0) (7/83)
+2023-06-06 16:58:56,278 INFO scheduler.TaskSetManager: Starting task 15.0 in stage 0.0 (TID 15) (147.96.20.35, executor 0, partition 15, ANY, 4753 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:56,279 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 6339 ms on 147.96.20.35 (executor 0) (8/83)
+2023-06-06 16:58:59,205 INFO scheduler.TaskSetManager: Starting task 16.0 in stage 0.0 (TID 16) (147.96.20.35, executor 0, partition 16, ANY, 4753 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:59,206 INFO scheduler.TaskSetManager: Finished task 8.0 in stage 0.0 (TID 8) in 4391 ms on 147.96.20.35 (executor 0) (9/83)
+2023-06-06 16:58:59,396 INFO scheduler.TaskSetManager: Starting task 17.0 in stage 0.0 (TID 17) (147.96.20.35, executor 0, partition 17, ANY, 4753 bytes) taskResourceAssignments Map()
+2023-06-06 16:58:59,398 INFO scheduler.TaskSetManager: Finished task 9.0 in stage 0.0 (TID 9) in 4123 ms on 147.96.20.35 (executor 0) (10/83)
+2023-06-06 16:59:01,770 INFO scheduler.TaskSetManager: Starting task 18.0 in stage 0.0 (TID 18) (147.96.20.35, executor 0, partition 18, ANY, 4738 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:01,770 INFO scheduler.TaskSetManager: Finished task 14.0 in stage 0.0 (TID 14) in 5586 ms on 147.96.20.35 (executor 0) (11/83)
+2023-06-06 16:59:01,809 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 147.96.20.35:45073 (size: 51.9 KiB, free: 434.2 MiB)
+2023-06-06 16:59:02,153 INFO scheduler.TaskSetManager: Finished task 12.0 in stage 0.0 (TID 12) in 6232 ms on 147.96.20.35 (executor 0) (12/83)
+2023-06-06 16:59:02,158 INFO scheduler.TaskSetManager: Starting task 19.0 in stage 0.0 (TID 19) (147.96.20.35, executor 0, partition 19, ANY, 4738 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:02,341 INFO scheduler.TaskSetManager: Starting task 20.0 in stage 0.0 (TID 20) (147.96.20.35, executor 0, partition 20, ANY, 4738 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:02,353 INFO scheduler.TaskSetManager: Finished task 10.0 in stage 0.0 (TID 10) in 6793 ms on 147.96.20.35 (executor 0) (13/83)
+2023-06-06 16:59:02,420 INFO scheduler.TaskSetManager: Starting task 21.0 in stage 0.0 (TID 21) (147.96.20.35, executor 0, partition 21, ANY, 4738 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:02,421 INFO scheduler.TaskSetManager: Finished task 15.0 in stage 0.0 (TID 15) in 6145 ms on 147.96.20.35 (executor 0) (14/83)
+2023-06-06 16:59:02,671 INFO scheduler.TaskSetManager: Starting task 22.0 in stage 0.0 (TID 22) (147.96.20.35, executor 0, partition 22, ANY, 4738 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:02,675 INFO scheduler.TaskSetManager: Finished task 13.0 in stage 0.0 (TID 13) in 6539 ms on 147.96.20.35 (executor 0) (15/83)
+2023-06-06 16:59:03,036 INFO scheduler.TaskSetManager: Starting task 23.0 in stage 0.0 (TID 23) (147.96.20.35, executor 0, partition 23, ANY, 4738 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:03,036 INFO scheduler.TaskSetManager: Finished task 17.0 in stage 0.0 (TID 17) in 3641 ms on 147.96.20.35 (executor 0) (16/83)
+2023-06-06 16:59:04,697 INFO scheduler.TaskSetManager: Starting task 24.0 in stage 0.0 (TID 24) (147.96.20.35, executor 0, partition 24, ANY, 4738 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:04,698 INFO scheduler.TaskSetManager: Finished task 16.0 in stage 0.0 (TID 16) in 5494 ms on 147.96.20.35 (executor 0) (17/83)
+2023-06-06 16:59:05,342 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (192.168.135.14:37480) with ID 3,  ResourceProfileId 0
+2023-06-06 16:59:05,414 INFO scheduler.TaskSetManager: Starting task 25.0 in stage 0.0 (TID 25) (147.96.20.35, executor 0, partition 25, ANY, 4738 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:05,416 INFO scheduler.TaskSetManager: Finished task 11.0 in stage 0.0 (TID 11) in 9623 ms on 147.96.20.35 (executor 0) (18/83)
+2023-06-06 16:59:05,672 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (192.168.135.23:44282) with ID 2,  ResourceProfileId 0
+2023-06-06 16:59:06,200 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (192.168.135.21:40516) with ID 1,  ResourceProfileId 0
+2023-06-06 16:59:06,347 INFO storage.BlockManagerMasterEndpoint: Registering block manager 192.168.135.14:45151 with 434.4 MiB RAM, BlockManagerId(3, 192.168.135.14, 45151, None)
+2023-06-06 16:59:06,574 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (192.168.135.15:38464) with ID 6,  ResourceProfileId 0
+2023-06-06 16:59:06,589 INFO scheduler.TaskSetManager: Starting task 30.0 in stage 0.0 (TID 26) (192.168.135.14, executor 3, partition 30, NODE_LOCAL, 4738 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:06,970 INFO storage.BlockManagerMasterEndpoint: Registering block manager 192.168.135.23:45413 with 434.4 MiB RAM, BlockManagerId(2, 192.168.135.23, 45413, None)
+2023-06-06 16:59:07,058 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (192.168.135.11:60688) with ID 5,  ResourceProfileId 0
+2023-06-06 16:59:07,431 INFO storage.BlockManagerMasterEndpoint: Registering block manager 192.168.135.21:34247 with 434.4 MiB RAM, BlockManagerId(1, 192.168.135.21, 34247, None)
+2023-06-06 16:59:07,633 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (192.168.135.22:54956) with ID 4,  ResourceProfileId 0
+2023-06-06 16:59:07,753 INFO scheduler.TaskSetManager: Starting task 80.0 in stage 0.0 (TID 27) (192.168.135.21, executor 1, partition 80, NODE_LOCAL, 4663 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:08,107 INFO storage.BlockManagerMasterEndpoint: Registering block manager 192.168.135.15:38391 with 434.4 MiB RAM, BlockManagerId(6, 192.168.135.15, 38391, None)
+2023-06-06 16:59:08,173 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on 192.168.135.14:45151 (size: 8.8 KiB, free: 434.4 MiB)
+2023-06-06 16:59:08,207 INFO scheduler.TaskSetManager: Finished task 18.0 in stage 0.0 (TID 18) in 6438 ms on 147.96.20.35 (executor 0) (19/83)
+2023-06-06 16:59:08,392 INFO scheduler.TaskSetManager: Starting task 82.0 in stage 0.0 (TID 28) (192.168.135.15, executor 6, partition 82, NODE_LOCAL, 4648 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:08,584 INFO storage.BlockManagerMasterEndpoint: Registering block manager 192.168.135.11:35017 with 434.4 MiB RAM, BlockManagerId(5, 192.168.135.11, 35017, None)
+2023-06-06 16:59:08,796 INFO scheduler.TaskSetManager: Finished task 20.0 in stage 0.0 (TID 20) in 6454 ms on 147.96.20.35 (executor 0) (20/83)
+2023-06-06 16:59:08,802 INFO scheduler.TaskSetManager: Starting task 26.0 in stage 0.0 (TID 29) (147.96.20.35, executor 0, partition 26, ANY, 4738 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:08,804 INFO scheduler.TaskSetManager: Starting task 27.0 in stage 0.0 (TID 30) (147.96.20.35, executor 0, partition 27, ANY, 4738 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:08,858 INFO scheduler.TaskSetManager: Starting task 28.0 in stage 0.0 (TID 31) (192.168.135.11, executor 5, partition 28, ANY, 4738 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:08,861 INFO scheduler.TaskSetManager: Starting task 29.0 in stage 0.0 (TID 32) (192.168.135.11, executor 5, partition 29, ANY, 4738 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:08,864 INFO scheduler.TaskSetManager: Starting task 31.0 in stage 0.0 (TID 33) (192.168.135.11, executor 5, partition 31, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:08,869 INFO scheduler.TaskSetManager: Starting task 32.0 in stage 0.0 (TID 34) (192.168.135.11, executor 5, partition 32, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:08,970 INFO storage.BlockManagerMasterEndpoint: Registering block manager 192.168.135.22:38689 with 434.4 MiB RAM, BlockManagerId(4, 192.168.135.22, 38689, None)
+2023-06-06 16:59:08,974 INFO scheduler.TaskSetManager: Starting task 33.0 in stage 0.0 (TID 35) (147.96.20.35, executor 0, partition 33, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:08,975 INFO scheduler.TaskSetManager: Finished task 21.0 in stage 0.0 (TID 21) in 6555 ms on 147.96.20.35 (executor 0) (21/83)
+2023-06-06 16:59:09,068 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 147.96.20.35:45073 (size: 51.9 KiB, free: 434.2 MiB)
+2023-06-06 16:59:09,174 INFO scheduler.TaskSetManager: Starting task 34.0 in stage 0.0 (TID 36) (192.168.135.15, executor 6, partition 34, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,175 INFO scheduler.TaskSetManager: Starting task 35.0 in stage 0.0 (TID 37) (192.168.135.21, executor 1, partition 35, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,176 INFO scheduler.TaskSetManager: Starting task 36.0 in stage 0.0 (TID 38) (192.168.135.23, executor 2, partition 36, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,177 INFO scheduler.TaskSetManager: Starting task 37.0 in stage 0.0 (TID 39) (192.168.135.14, executor 3, partition 37, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,177 INFO scheduler.TaskSetManager: Starting task 38.0 in stage 0.0 (TID 40) (192.168.135.15, executor 6, partition 38, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,178 INFO scheduler.TaskSetManager: Starting task 39.0 in stage 0.0 (TID 41) (192.168.135.21, executor 1, partition 39, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,187 INFO scheduler.TaskSetManager: Starting task 40.0 in stage 0.0 (TID 42) (192.168.135.23, executor 2, partition 40, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,190 INFO scheduler.TaskSetManager: Starting task 41.0 in stage 0.0 (TID 43) (192.168.135.14, executor 3, partition 41, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,192 INFO scheduler.TaskSetManager: Starting task 42.0 in stage 0.0 (TID 44) (192.168.135.15, executor 6, partition 42, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,194 INFO scheduler.TaskSetManager: Starting task 43.0 in stage 0.0 (TID 45) (192.168.135.21, executor 1, partition 43, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,196 INFO scheduler.TaskSetManager: Starting task 44.0 in stage 0.0 (TID 46) (192.168.135.23, executor 2, partition 44, ANY, 4708 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,198 INFO scheduler.TaskSetManager: Starting task 45.0 in stage 0.0 (TID 47) (192.168.135.14, executor 3, partition 45, ANY, 4708 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,201 INFO scheduler.TaskSetManager: Starting task 46.0 in stage 0.0 (TID 48) (192.168.135.23, executor 2, partition 46, ANY, 4708 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,232 INFO scheduler.TaskSetManager: Starting task 47.0 in stage 0.0 (TID 49) (147.96.20.35, executor 0, partition 47, ANY, 4708 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,233 INFO scheduler.TaskSetManager: Finished task 23.0 in stage 0.0 (TID 23) in 6198 ms on 147.96.20.35 (executor 0) (22/83)
+2023-06-06 16:59:09,308 INFO scheduler.TaskSetManager: Starting task 48.0 in stage 0.0 (TID 50) (192.168.135.22, executor 4, partition 48, ANY, 4708 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,309 INFO scheduler.TaskSetManager: Starting task 49.0 in stage 0.0 (TID 51) (192.168.135.22, executor 4, partition 49, ANY, 4708 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,310 INFO scheduler.TaskSetManager: Starting task 50.0 in stage 0.0 (TID 52) (192.168.135.22, executor 4, partition 50, ANY, 4708 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,311 INFO scheduler.TaskSetManager: Starting task 51.0 in stage 0.0 (TID 53) (192.168.135.22, executor 4, partition 51, ANY, 4708 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:09,433 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 147.96.20.35:45073 (size: 51.9 KiB, free: 434.1 MiB)
+2023-06-06 16:59:09,601 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on 192.168.135.21:34247 (size: 8.8 KiB, free: 434.4 MiB)
+2023-06-06 16:59:09,913 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on 192.168.135.15:38391 (size: 8.8 KiB, free: 434.4 MiB)
+2023-06-06 16:59:10,535 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 192.168.135.14:45151 (size: 51.9 KiB, free: 434.3 MiB)
+2023-06-06 16:59:10,652 INFO scheduler.TaskSetManager: Starting task 52.0 in stage 0.0 (TID 54) (147.96.20.35, executor 0, partition 52, ANY, 4708 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:10,653 INFO scheduler.TaskSetManager: Finished task 24.0 in stage 0.0 (TID 24) in 5959 ms on 147.96.20.35 (executor 0) (23/83)
+2023-06-06 16:59:10,654 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 192.168.135.14:45151 (size: 51.9 KiB, free: 434.3 MiB)
+2023-06-06 16:59:10,768 INFO scheduler.TaskSetManager: Starting task 53.0 in stage 0.0 (TID 55) (147.96.20.35, executor 0, partition 53, ANY, 4708 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:10,769 INFO scheduler.TaskSetManager: Finished task 19.0 in stage 0.0 (TID 19) in 8612 ms on 147.96.20.35 (executor 0) (24/83)
+2023-06-06 16:59:10,859 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 192.168.135.14:45151 (size: 51.9 KiB, free: 434.2 MiB)
+2023-06-06 16:59:11,098 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on 192.168.135.11:35017 (size: 8.8 KiB, free: 434.4 MiB)
+2023-06-06 16:59:11,360 INFO scheduler.TaskSetManager: Starting task 54.0 in stage 0.0 (TID 56) (147.96.20.35, executor 0, partition 54, ANY, 4708 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:11,364 INFO scheduler.TaskSetManager: Finished task 25.0 in stage 0.0 (TID 25) in 5951 ms on 147.96.20.35 (executor 0) (25/83)
+2023-06-06 16:59:11,395 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on 192.168.135.23:45413 (size: 8.8 KiB, free: 434.4 MiB)
+2023-06-06 16:59:11,411 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on 192.168.135.22:38689 (size: 8.8 KiB, free: 434.4 MiB)
+2023-06-06 16:59:11,638 INFO scheduler.TaskSetManager: Starting task 55.0 in stage 0.0 (TID 57) (147.96.20.35, executor 0, partition 55, ANY, 4693 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:11,639 INFO scheduler.TaskSetManager: Finished task 22.0 in stage 0.0 (TID 22) in 8971 ms on 147.96.20.35 (executor 0) (26/83)
+2023-06-06 16:59:11,785 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 147.96.20.35:45073 (size: 51.9 KiB, free: 434.1 MiB)
+2023-06-06 16:59:12,040 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 192.168.135.21:34247 (size: 51.9 KiB, free: 434.3 MiB)
+2023-06-06 16:59:12,068 INFO storage.BlockManagerInfo: Added broadcast_7_piece0 in memory on 192.168.135.21:34247 (size: 51.9 KiB, free: 434.3 MiB)
+2023-06-06 16:59:12,381 INFO storage.BlockManagerInfo: Added broadcast_8_piece0 in memory on 192.168.135.15:38391 (size: 51.9 KiB, free: 434.3 MiB)
+2023-06-06 16:59:12,424 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 192.168.135.15:38391 (size: 51.9 KiB, free: 434.3 MiB)
+2023-06-06 16:59:13,316 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 192.168.135.23:45413 (size: 51.9 KiB, free: 434.3 MiB)
+2023-06-06 16:59:13,349 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 192.168.135.23:45413 (size: 51.9 KiB, free: 434.3 MiB)
+2023-06-06 16:59:14,012 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 192.168.135.22:38689 (size: 51.9 KiB, free: 434.3 MiB)
+2023-06-06 16:59:14,691 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 192.168.135.11:35017 (size: 51.9 KiB, free: 434.3 MiB)
+2023-06-06 16:59:14,765 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 192.168.135.11:35017 (size: 51.9 KiB, free: 434.3 MiB)
+2023-06-06 16:59:16,041 INFO scheduler.TaskSetManager: Starting task 56.0 in stage 0.0 (TID 58) (147.96.20.35, executor 0, partition 56, ANY, 4693 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:16,044 INFO scheduler.TaskSetManager: Finished task 54.0 in stage 0.0 (TID 56) in 4683 ms on 147.96.20.35 (executor 0) (27/83)
+2023-06-06 16:59:16,149 INFO scheduler.TaskSetManager: Finished task 33.0 in stage 0.0 (TID 35) in 7176 ms on 147.96.20.35 (executor 0) (28/83)
+2023-06-06 16:59:16,157 INFO scheduler.TaskSetManager: Starting task 57.0 in stage 0.0 (TID 59) (147.96.20.35, executor 0, partition 57, ANY, 4693 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:16,867 INFO scheduler.TaskSetManager: Starting task 58.0 in stage 0.0 (TID 60) (147.96.20.35, executor 0, partition 58, ANY, 4693 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:16,868 INFO scheduler.TaskSetManager: Finished task 47.0 in stage 0.0 (TID 49) in 7637 ms on 147.96.20.35 (executor 0) (29/83)
+2023-06-06 16:59:16,951 INFO scheduler.TaskSetManager: Starting task 59.0 in stage 0.0 (TID 61) (147.96.20.35, executor 0, partition 59, ANY, 4693 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:16,952 INFO scheduler.TaskSetManager: Finished task 27.0 in stage 0.0 (TID 30) in 8149 ms on 147.96.20.35 (executor 0) (30/83)
+2023-06-06 16:59:17,228 INFO scheduler.TaskSetManager: Finished task 26.0 in stage 0.0 (TID 29) in 8427 ms on 147.96.20.35 (executor 0) (31/83)
+2023-06-06 16:59:17,230 INFO scheduler.TaskSetManager: Starting task 60.0 in stage 0.0 (TID 62) (147.96.20.35, executor 0, partition 60, ANY, 4693 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:17,853 INFO scheduler.TaskSetManager: Starting task 61.0 in stage 0.0 (TID 63) (147.96.20.35, executor 0, partition 61, ANY, 4693 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:17,854 INFO scheduler.TaskSetManager: Finished task 53.0 in stage 0.0 (TID 55) in 7087 ms on 147.96.20.35 (executor 0) (32/83)
+2023-06-06 16:59:18,705 INFO scheduler.TaskSetManager: Starting task 62.0 in stage 0.0 (TID 64) (147.96.20.35, executor 0, partition 62, ANY, 4693 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:18,707 INFO scheduler.TaskSetManager: Finished task 52.0 in stage 0.0 (TID 54) in 8056 ms on 147.96.20.35 (executor 0) (33/83)
+2023-06-06 16:59:19,325 INFO scheduler.TaskSetManager: Finished task 55.0 in stage 0.0 (TID 57) in 7688 ms on 147.96.20.35 (executor 0) (34/83)
+2023-06-06 16:59:19,328 INFO scheduler.TaskSetManager: Starting task 63.0 in stage 0.0 (TID 65) (147.96.20.35, executor 0, partition 63, ANY, 4693 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:23,355 INFO scheduler.TaskSetManager: Starting task 64.0 in stage 0.0 (TID 66) (147.96.20.35, executor 0, partition 64, ANY, 4693 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:23,357 INFO scheduler.TaskSetManager: Finished task 57.0 in stage 0.0 (TID 59) in 7201 ms on 147.96.20.35 (executor 0) (35/83)
+2023-06-06 16:59:24,492 INFO scheduler.TaskSetManager: Finished task 58.0 in stage 0.0 (TID 60) in 7625 ms on 147.96.20.35 (executor 0) (36/83)
+2023-06-06 16:59:24,494 INFO scheduler.TaskSetManager: Starting task 65.0 in stage 0.0 (TID 67) (147.96.20.35, executor 0, partition 65, ANY, 4693 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:24,702 INFO scheduler.TaskSetManager: Starting task 66.0 in stage 0.0 (TID 68) (147.96.20.35, executor 0, partition 66, ANY, 4693 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:24,704 INFO scheduler.TaskSetManager: Finished task 56.0 in stage 0.0 (TID 58) in 8664 ms on 147.96.20.35 (executor 0) (37/83)
+2023-06-06 16:59:24,924 INFO scheduler.TaskSetManager: Starting task 67.0 in stage 0.0 (TID 69) (147.96.20.35, executor 0, partition 67, ANY, 4693 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:24,925 INFO scheduler.TaskSetManager: Finished task 59.0 in stage 0.0 (TID 61) in 7973 ms on 147.96.20.35 (executor 0) (38/83)
+2023-06-06 16:59:25,040 INFO scheduler.TaskSetManager: Finished task 61.0 in stage 0.0 (TID 63) in 7187 ms on 147.96.20.35 (executor 0) (39/83)
+2023-06-06 16:59:25,042 INFO scheduler.TaskSetManager: Starting task 68.0 in stage 0.0 (TID 70) (147.96.20.35, executor 0, partition 68, ANY, 4693 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:25,470 INFO scheduler.TaskSetManager: Finished task 60.0 in stage 0.0 (TID 62) in 8240 ms on 147.96.20.35 (executor 0) (40/83)
+2023-06-06 16:59:25,472 INFO scheduler.TaskSetManager: Starting task 69.0 in stage 0.0 (TID 71) (147.96.20.35, executor 0, partition 69, ANY, 4693 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:27,511 INFO scheduler.TaskSetManager: Starting task 70.0 in stage 0.0 (TID 72) (147.96.20.35, executor 0, partition 70, ANY, 4678 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:27,514 INFO scheduler.TaskSetManager: Finished task 62.0 in stage 0.0 (TID 64) in 8810 ms on 147.96.20.35 (executor 0) (41/83)
+2023-06-06 16:59:27,584 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 147.96.20.35:45073 (size: 51.9 KiB, free: 434.0 MiB)
+2023-06-06 16:59:28,268 INFO scheduler.TaskSetManager: Starting task 71.0 in stage 0.0 (TID 73) (147.96.20.35, executor 0, partition 71, ANY, 4678 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:28,269 INFO scheduler.TaskSetManager: Finished task 63.0 in stage 0.0 (TID 65) in 8943 ms on 147.96.20.35 (executor 0) (42/83)
+2023-06-06 16:59:28,782 INFO scheduler.TaskSetManager: Finished task 69.0 in stage 0.0 (TID 71) in 3311 ms on 147.96.20.35 (executor 0) (43/83)
+2023-06-06 16:59:28,785 INFO scheduler.TaskSetManager: Starting task 72.0 in stage 0.0 (TID 74) (147.96.20.35, executor 0, partition 72, ANY, 4678 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:31,090 INFO scheduler.TaskSetManager: Starting task 73.0 in stage 0.0 (TID 75) (147.96.20.35, executor 0, partition 73, ANY, 4678 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:31,091 INFO scheduler.TaskSetManager: Finished task 64.0 in stage 0.0 (TID 66) in 7737 ms on 147.96.20.35 (executor 0) (44/83)
+2023-06-06 16:59:32,061 INFO scheduler.TaskSetManager: Starting task 74.0 in stage 0.0 (TID 76) (147.96.20.35, executor 0, partition 74, ANY, 4678 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:32,063 INFO scheduler.TaskSetManager: Finished task 67.0 in stage 0.0 (TID 69) in 7140 ms on 147.96.20.35 (executor 0) (45/83)
+2023-06-06 16:59:32,072 INFO scheduler.TaskSetManager: Starting task 75.0 in stage 0.0 (TID 77) (147.96.20.35, executor 0, partition 75, ANY, 4678 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:32,073 INFO scheduler.TaskSetManager: Finished task 66.0 in stage 0.0 (TID 68) in 7372 ms on 147.96.20.35 (executor 0) (46/83)
+2023-06-06 16:59:32,878 INFO scheduler.TaskSetManager: Finished task 68.0 in stage 0.0 (TID 70) in 7837 ms on 147.96.20.35 (executor 0) (47/83)
+2023-06-06 16:59:32,881 INFO scheduler.TaskSetManager: Starting task 76.0 in stage 0.0 (TID 78) (147.96.20.35, executor 0, partition 76, ANY, 4678 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:33,472 INFO scheduler.TaskSetManager: Starting task 77.0 in stage 0.0 (TID 79) (192.168.135.21, executor 1, partition 77, ANY, 4678 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:33,475 INFO scheduler.TaskSetManager: Finished task 43.0 in stage 0.0 (TID 45) in 24281 ms on 192.168.135.21 (executor 1) (48/83)
+2023-06-06 16:59:34,292 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 192.168.135.21:34247 (size: 51.9 KiB, free: 434.2 MiB)
+2023-06-06 16:59:34,729 INFO scheduler.TaskSetManager: Starting task 78.0 in stage 0.0 (TID 80) (147.96.20.35, executor 0, partition 78, ANY, 4678 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:34,731 INFO scheduler.TaskSetManager: Finished task 70.0 in stage 0.0 (TID 72) in 7220 ms on 147.96.20.35 (executor 0) (49/83)
+2023-06-06 16:59:35,888 INFO scheduler.TaskSetManager: Starting task 79.0 in stage 0.0 (TID 81) (192.168.135.14, executor 3, partition 79, ANY, 4663 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:35,944 WARN scheduler.TaskSetManager: Lost task 41.0 in stage 0.0 (TID 43) (192.168.135.14 executor 3): org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1775114561-147.96.20.35-1671636470776:blk_1073743233_2411 file=/user/pabfer19/Bicimad/201707_Usage_Bicimad.json No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK]
+	at org.apache.hadoop.hdfs.DFSInputStream.refetchLocations(DFSInputStream.java:1007)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:990)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:969)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:677)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:884)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:957)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.fillBuffer(UncompressedSplitLineReader.java:62)
+	at org.apache.hadoop.util.LineReader.readDefaultLine(LineReader.java:227)
+	at org.apache.hadoop.util.LineReader.readLine(LineReader.java:185)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.readLine(UncompressedSplitLineReader.java:94)
+	at org.apache.hadoop.mapred.LineRecordReader.<init>(LineRecordReader.java:149)
+	at org.apache.hadoop.mapred.TextInputFormat.getRecordReader(TextInputFormat.java:67)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.liftedTree1$1(HadoopRDD.scala:288)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.<init>(HadoopRDD.scala:287)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:245)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:97)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-06-06 16:59:36,297 INFO storage.BlockManagerInfo: Added broadcast_7_piece0 in memory on 192.168.135.14:45151 (size: 51.9 KiB, free: 434.2 MiB)
+2023-06-06 16:59:36,821 INFO scheduler.TaskSetManager: Starting task 41.1 in stage 0.0 (TID 82) (192.168.135.14, executor 3, partition 41, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:36,822 INFO scheduler.TaskSetManager: Finished task 37.0 in stage 0.0 (TID 39) in 27646 ms on 192.168.135.14 (executor 3) (50/83)
+2023-06-06 16:59:36,904 INFO scheduler.TaskSetManager: Starting task 81.0 in stage 0.0 (TID 83) (147.96.20.35, executor 0, partition 81, ANY, 4648 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:36,906 INFO scheduler.TaskSetManager: Finished task 73.0 in stage 0.0 (TID 75) in 5816 ms on 147.96.20.35 (executor 0) (51/83)
+2023-06-06 16:59:37,112 INFO storage.BlockManagerInfo: Added broadcast_8_piece0 in memory on 147.96.20.35:45073 (size: 51.9 KiB, free: 434.0 MiB)
+2023-06-06 16:59:37,867 INFO scheduler.TaskSetManager: Finished task 75.0 in stage 0.0 (TID 77) in 5796 ms on 147.96.20.35 (executor 0) (52/83)
+2023-06-06 16:59:38,355 INFO scheduler.TaskSetManager: Finished task 76.0 in stage 0.0 (TID 78) in 5475 ms on 147.96.20.35 (executor 0) (53/83)
+2023-06-06 16:59:40,197 INFO scheduler.TaskSetManager: Finished task 34.0 in stage 0.0 (TID 36) in 31024 ms on 192.168.135.15 (executor 6) (54/83)
+2023-06-06 16:59:40,230 INFO scheduler.TaskSetManager: Finished task 42.0 in stage 0.0 (TID 44) in 31039 ms on 192.168.135.15 (executor 6) (55/83)
+2023-06-06 16:59:40,526 INFO scheduler.TaskSetManager: Finished task 28.0 in stage 0.0 (TID 31) in 31668 ms on 192.168.135.11 (executor 5) (56/83)
+2023-06-06 16:59:40,683 INFO scheduler.TaskSetManager: Finished task 32.0 in stage 0.0 (TID 34) in 31815 ms on 192.168.135.11 (executor 5) (57/83)
+2023-06-06 16:59:41,052 INFO scheduler.TaskSetManager: Finished task 78.0 in stage 0.0 (TID 80) in 6323 ms on 147.96.20.35 (executor 0) (58/83)
+2023-06-06 16:59:41,149 INFO scheduler.TaskSetManager: Finished task 81.0 in stage 0.0 (TID 83) in 4245 ms on 147.96.20.35 (executor 0) (59/83)
+2023-06-06 16:59:41,553 INFO scheduler.TaskSetManager: Finished task 48.0 in stage 0.0 (TID 50) in 32246 ms on 192.168.135.22 (executor 4) (60/83)
+2023-06-06 16:59:41,779 INFO scheduler.TaskSetManager: Finished task 50.0 in stage 0.0 (TID 52) in 32470 ms on 192.168.135.22 (executor 4) (61/83)
+2023-06-06 16:59:42,713 INFO scheduler.TaskSetManager: Finished task 39.0 in stage 0.0 (TID 41) in 33535 ms on 192.168.135.21 (executor 1) (62/83)
+2023-06-06 16:59:43,791 WARN scheduler.TaskSetManager: Lost task 72.0 in stage 0.0 (TID 74) (147.96.20.35 executor 0): org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1775114561-147.96.20.35-1671636470776:blk_1073743206_2383 file=/user/pabfer19/Bicimad/201710_Usage_Bicimad.json No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK]
+	at org.apache.hadoop.hdfs.DFSInputStream.refetchLocations(DFSInputStream.java:1007)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:990)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:969)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:677)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:884)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:957)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.fillBuffer(UncompressedSplitLineReader.java:62)
+	at org.apache.hadoop.util.LineReader.readDefaultLine(LineReader.java:227)
+	at org.apache.hadoop.util.LineReader.readLine(LineReader.java:185)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.readLine(UncompressedSplitLineReader.java:94)
+	at org.apache.hadoop.mapred.LineRecordReader.<init>(LineRecordReader.java:149)
+	at org.apache.hadoop.mapred.TextInputFormat.getRecordReader(TextInputFormat.java:67)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.liftedTree1$1(HadoopRDD.scala:288)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.<init>(HadoopRDD.scala:287)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:245)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:97)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-06-06 16:59:43,793 INFO scheduler.TaskSetManager: Starting task 72.1 in stage 0.0 (TID 84) (192.168.135.21, executor 1, partition 72, ANY, 4678 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:43,886 INFO scheduler.TaskSetManager: Finished task 36.0 in stage 0.0 (TID 38) in 34711 ms on 192.168.135.23 (executor 2) (63/83)
+2023-06-06 16:59:43,888 INFO scheduler.TaskSetManager: Finished task 44.0 in stage 0.0 (TID 46) in 34693 ms on 192.168.135.23 (executor 2) (64/83)
+2023-06-06 16:59:44,243 INFO scheduler.TaskSetManager: Finished task 46.0 in stage 0.0 (TID 48) in 35043 ms on 192.168.135.23 (executor 2) (65/83)
+2023-06-06 16:59:48,436 INFO scheduler.TaskSetManager: Finished task 77.0 in stage 0.0 (TID 79) in 14964 ms on 192.168.135.21 (executor 1) (66/83)
+2023-06-06 16:59:52,413 INFO scheduler.TaskSetManager: Finished task 80.0 in stage 0.0 (TID 27) in 44661 ms on 192.168.135.21 (executor 1) (67/83)
+2023-06-06 16:59:53,039 WARN scheduler.TaskSetManager: Lost task 71.0 in stage 0.0 (TID 73) (147.96.20.35 executor 0): org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1775114561-147.96.20.35-1671636470776:blk_1073743206_2383 file=/user/pabfer19/Bicimad/201710_Usage_Bicimad.json No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.135.1:9866,DS-052796ff-b0d2-4032-af51-373fb71a652b,DISK] DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK]
+	at org.apache.hadoop.hdfs.DFSInputStream.refetchLocations(DFSInputStream.java:1007)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:990)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:969)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:677)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:884)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:957)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.fillBuffer(UncompressedSplitLineReader.java:62)
+	at org.apache.hadoop.util.LineReader.readDefaultLine(LineReader.java:227)
+	at org.apache.hadoop.util.LineReader.readLine(LineReader.java:185)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.readLine(UncompressedSplitLineReader.java:94)
+	at org.apache.hadoop.mapred.LineRecordReader.next(LineRecordReader.java:261)
+	at org.apache.hadoop.mapred.LineRecordReader.next(LineRecordReader.java:50)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.getNext(HadoopRDD.scala:314)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.getNext(HadoopRDD.scala:245)
+	at org.apache.spark.util.NextIterator.hasNext(NextIterator.scala:73)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at org.apache.spark.api.python.PythonRDD$.writeIteratorToStream(PythonRDD.scala:307)
+	at org.apache.spark.api.python.PythonRunner$$anon$2.writeIteratorToStream(PythonRunner.scala:732)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.$anonfun$run$1(PythonRunner.scala:438)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:2066)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.run(PythonRunner.scala:272)
+
+2023-06-06 16:59:53,040 INFO scheduler.TaskSetManager: Starting task 71.1 in stage 0.0 (TID 85) (192.168.135.15, executor 6, partition 71, ANY, 4678 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:53,378 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 192.168.135.15:38391 (size: 51.9 KiB, free: 434.2 MiB)
+2023-06-06 16:59:54,450 WARN scheduler.TaskSetManager: Lost task 41.1 in stage 0.0 (TID 82) (192.168.135.14 executor 3): org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1775114561-147.96.20.35-1671636470776:blk_1073743233_2411 file=/user/pabfer19/Bicimad/201707_Usage_Bicimad.json No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK]
+	at org.apache.hadoop.hdfs.DFSInputStream.refetchLocations(DFSInputStream.java:1007)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:990)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:969)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:677)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:884)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:957)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.fillBuffer(UncompressedSplitLineReader.java:62)
+	at org.apache.hadoop.util.LineReader.readDefaultLine(LineReader.java:227)
+	at org.apache.hadoop.util.LineReader.readLine(LineReader.java:185)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.readLine(UncompressedSplitLineReader.java:94)
+	at org.apache.hadoop.mapred.LineRecordReader.<init>(LineRecordReader.java:149)
+	at org.apache.hadoop.mapred.TextInputFormat.getRecordReader(TextInputFormat.java:67)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.liftedTree1$1(HadoopRDD.scala:288)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.<init>(HadoopRDD.scala:287)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:245)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:97)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-06-06 16:59:54,451 INFO scheduler.TaskSetManager: Starting task 41.2 in stage 0.0 (TID 86) (192.168.135.11, executor 5, partition 41, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:54,695 WARN scheduler.TaskSetManager: Lost task 40.0 in stage 0.0 (TID 42) (192.168.135.23 executor 2): org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1775114561-147.96.20.35-1671636470776:blk_1073743233_2411 file=/user/pabfer19/Bicimad/201707_Usage_Bicimad.json No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.135.1:9866,DS-052796ff-b0d2-4032-af51-373fb71a652b,DISK] DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK]
+	at org.apache.hadoop.hdfs.DFSInputStream.refetchLocations(DFSInputStream.java:1007)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:990)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:969)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:677)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:884)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:957)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.fillBuffer(UncompressedSplitLineReader.java:62)
+	at org.apache.hadoop.util.LineReader.readDefaultLine(LineReader.java:227)
+	at org.apache.hadoop.util.LineReader.readLine(LineReader.java:185)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.readLine(UncompressedSplitLineReader.java:94)
+	at org.apache.hadoop.mapred.LineRecordReader.next(LineRecordReader.java:261)
+	at org.apache.hadoop.mapred.LineRecordReader.next(LineRecordReader.java:50)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.getNext(HadoopRDD.scala:314)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.getNext(HadoopRDD.scala:245)
+	at org.apache.spark.util.NextIterator.hasNext(NextIterator.scala:73)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at org.apache.spark.api.python.PythonRDD$.writeIteratorToStream(PythonRDD.scala:307)
+	at org.apache.spark.api.python.PythonRunner$$anon$2.writeIteratorToStream(PythonRunner.scala:732)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.$anonfun$run$1(PythonRunner.scala:438)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:2066)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.run(PythonRunner.scala:272)
+
+2023-06-06 16:59:54,696 INFO scheduler.TaskSetManager: Starting task 40.1 in stage 0.0 (TID 87) (192.168.135.21, executor 1, partition 40, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 16:59:54,699 INFO scheduler.TaskSetManager: Finished task 79.0 in stage 0.0 (TID 81) in 18813 ms on 192.168.135.14 (executor 3) (68/83)
+2023-06-06 17:00:07,097 WARN scheduler.TaskSetManager: Lost task 72.1 in stage 0.0 (TID 84) (192.168.135.21 executor 1): org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1775114561-147.96.20.35-1671636470776:blk_1073743206_2383 file=/user/pabfer19/Bicimad/201710_Usage_Bicimad.json No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK]
+	at org.apache.hadoop.hdfs.DFSInputStream.refetchLocations(DFSInputStream.java:1007)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:990)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:969)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:677)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:884)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:957)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.fillBuffer(UncompressedSplitLineReader.java:62)
+	at org.apache.hadoop.util.LineReader.readDefaultLine(LineReader.java:227)
+	at org.apache.hadoop.util.LineReader.readLine(LineReader.java:185)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.readLine(UncompressedSplitLineReader.java:94)
+	at org.apache.hadoop.mapred.LineRecordReader.<init>(LineRecordReader.java:149)
+	at org.apache.hadoop.mapred.TextInputFormat.getRecordReader(TextInputFormat.java:67)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.liftedTree1$1(HadoopRDD.scala:288)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.<init>(HadoopRDD.scala:287)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:245)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:97)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-06-06 17:00:07,100 INFO scheduler.TaskSetManager: Starting task 72.2 in stage 0.0 (TID 88) (192.168.135.11, executor 5, partition 72, ANY, 4678 bytes) taskResourceAssignments Map()
+2023-06-06 17:00:07,418 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 192.168.135.11:35017 (size: 51.9 KiB, free: 434.2 MiB)
+2023-06-06 17:00:12,715 INFO scheduler.TaskSetManager: Lost task 71.1 in stage 0.0 (TID 85) on 192.168.135.15, executor 6: org.apache.hadoop.hdfs.BlockMissingException (Could not obtain block: BP-1775114561-147.96.20.35-1671636470776:blk_1073743206_2383 file=/user/pabfer19/Bicimad/201710_Usage_Bicimad.json No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK]) [duplicate 1]
+2023-06-06 17:00:12,716 INFO scheduler.TaskSetManager: Starting task 71.2 in stage 0.0 (TID 89) (192.168.135.21, executor 1, partition 71, ANY, 4678 bytes) taskResourceAssignments Map()
+2023-06-06 17:00:13,403 INFO scheduler.TaskSetManager: Finished task 51.0 in stage 0.0 (TID 53) in 64093 ms on 192.168.135.22 (executor 4) (69/83)
+2023-06-06 17:00:15,631 WARN scheduler.TaskSetManager: Lost task 41.2 in stage 0.0 (TID 86) (192.168.135.11 executor 5): org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1775114561-147.96.20.35-1671636470776:blk_1073743233_2411 file=/user/pabfer19/Bicimad/201707_Usage_Bicimad.json No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK]
+	at org.apache.hadoop.hdfs.DFSInputStream.refetchLocations(DFSInputStream.java:1007)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:990)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:969)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:677)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:884)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:957)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.fillBuffer(UncompressedSplitLineReader.java:62)
+	at org.apache.hadoop.util.LineReader.readDefaultLine(LineReader.java:227)
+	at org.apache.hadoop.util.LineReader.readLine(LineReader.java:185)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.readLine(UncompressedSplitLineReader.java:94)
+	at org.apache.hadoop.mapred.LineRecordReader.<init>(LineRecordReader.java:149)
+	at org.apache.hadoop.mapred.TextInputFormat.getRecordReader(TextInputFormat.java:67)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.liftedTree1$1(HadoopRDD.scala:288)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.<init>(HadoopRDD.scala:287)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:245)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:97)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-06-06 17:00:15,634 INFO scheduler.TaskSetManager: Starting task 41.3 in stage 0.0 (TID 90) (192.168.135.23, executor 2, partition 41, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 17:00:21,427 WARN scheduler.TaskSetManager: Lost task 40.1 in stage 0.0 (TID 87) (192.168.135.21 executor 1): org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1775114561-147.96.20.35-1671636470776:blk_1073743233_2411 file=/user/pabfer19/Bicimad/201707_Usage_Bicimad.json No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.135.21:9866,DS-bf52473a-33a0-452f-83c1-180e11bc183d,DISK] DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK]
+	at org.apache.hadoop.hdfs.DFSInputStream.refetchLocations(DFSInputStream.java:1007)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:990)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:969)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:677)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:884)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:957)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.fillBuffer(UncompressedSplitLineReader.java:62)
+	at org.apache.hadoop.util.LineReader.readDefaultLine(LineReader.java:227)
+	at org.apache.hadoop.util.LineReader.readLine(LineReader.java:185)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.readLine(UncompressedSplitLineReader.java:94)
+	at org.apache.hadoop.mapred.LineRecordReader.next(LineRecordReader.java:261)
+	at org.apache.hadoop.mapred.LineRecordReader.next(LineRecordReader.java:50)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.getNext(HadoopRDD.scala:314)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.getNext(HadoopRDD.scala:245)
+	at org.apache.spark.util.NextIterator.hasNext(NextIterator.scala:73)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at org.apache.spark.api.python.PythonRDD$.writeIteratorToStream(PythonRDD.scala:307)
+	at org.apache.spark.api.python.PythonRunner$$anon$2.writeIteratorToStream(PythonRunner.scala:732)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.$anonfun$run$1(PythonRunner.scala:438)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:2066)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.run(PythonRunner.scala:272)
+
+2023-06-06 17:00:21,430 INFO scheduler.TaskSetManager: Starting task 40.2 in stage 0.0 (TID 91) (147.96.20.35, executor 0, partition 40, ANY, 4723 bytes) taskResourceAssignments Map()
+2023-06-06 17:00:25,266 INFO scheduler.TaskSetManager: Finished task 30.0 in stage 0.0 (TID 26) in 78680 ms on 192.168.135.14 (executor 3) (70/83)
+2023-06-06 17:00:26,652 INFO scheduler.TaskSetManager: Finished task 45.0 in stage 0.0 (TID 47) in 77453 ms on 192.168.135.14 (executor 3) (71/83)
+2023-06-06 17:00:29,853 WARN scheduler.TaskSetManager: Lost task 72.2 in stage 0.0 (TID 88) (192.168.135.11 executor 5): org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1775114561-147.96.20.35-1671636470776:blk_1073743206_2383 file=/user/pabfer19/Bicimad/201710_Usage_Bicimad.json No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK]
+	at org.apache.hadoop.hdfs.DFSInputStream.refetchLocations(DFSInputStream.java:1007)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:990)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:969)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:677)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:884)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:957)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.fillBuffer(UncompressedSplitLineReader.java:62)
+	at org.apache.hadoop.util.LineReader.readDefaultLine(LineReader.java:227)
+	at org.apache.hadoop.util.LineReader.readLine(LineReader.java:185)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.readLine(UncompressedSplitLineReader.java:94)
+	at org.apache.hadoop.mapred.LineRecordReader.<init>(LineRecordReader.java:149)
+	at org.apache.hadoop.mapred.TextInputFormat.getRecordReader(TextInputFormat.java:67)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.liftedTree1$1(HadoopRDD.scala:288)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.<init>(HadoopRDD.scala:287)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:245)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:97)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-06-06 17:00:29,855 INFO scheduler.TaskSetManager: Starting task 72.3 in stage 0.0 (TID 92) (192.168.135.15, executor 6, partition 72, ANY, 4678 bytes) taskResourceAssignments Map()
+2023-06-06 17:00:30,552 INFO scheduler.TaskSetManager: Finished task 38.0 in stage 0.0 (TID 40) in 81375 ms on 192.168.135.15 (executor 6) (72/83)
+2023-06-06 17:00:31,951 WARN scheduler.TaskSetManager: Lost task 41.3 in stage 0.0 (TID 90) (192.168.135.23 executor 2): org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1775114561-147.96.20.35-1671636470776:blk_1073743233_2411 file=/user/pabfer19/Bicimad/201707_Usage_Bicimad.json No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK]
+	at org.apache.hadoop.hdfs.DFSInputStream.refetchLocations(DFSInputStream.java:1007)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:990)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:969)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:677)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:884)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:957)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.fillBuffer(UncompressedSplitLineReader.java:62)
+	at org.apache.hadoop.util.LineReader.readDefaultLine(LineReader.java:227)
+	at org.apache.hadoop.util.LineReader.readLine(LineReader.java:185)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.readLine(UncompressedSplitLineReader.java:94)
+	at org.apache.hadoop.mapred.LineRecordReader.<init>(LineRecordReader.java:149)
+	at org.apache.hadoop.mapred.TextInputFormat.getRecordReader(TextInputFormat.java:67)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.liftedTree1$1(HadoopRDD.scala:288)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.<init>(HadoopRDD.scala:287)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:245)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:97)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-06-06 17:00:31,954 ERROR scheduler.TaskSetManager: Task 41 in stage 0.0 failed 4 times; aborting job
+2023-06-06 17:00:31,958 INFO scheduler.TaskSchedulerImpl: Cancelling stage 0
+2023-06-06 17:00:31,958 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 0: Stage cancelled
+2023-06-06 17:00:31,960 INFO scheduler.TaskSchedulerImpl: Stage 0 was cancelled
+2023-06-06 17:00:31,961 INFO scheduler.DAGScheduler: ResultStage 0 (countByKey at /home/pabfer19/Bicimad/bicimad.py:176) failed in 102,097 s due to Job aborted due to stage failure: Task 41 in stage 0.0 failed 4 times, most recent failure: Lost task 41.3 in stage 0.0 (TID 90) (192.168.135.23 executor 2): org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1775114561-147.96.20.35-1671636470776:blk_1073743233_2411 file=/user/pabfer19/Bicimad/201707_Usage_Bicimad.json No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK]
+	at org.apache.hadoop.hdfs.DFSInputStream.refetchLocations(DFSInputStream.java:1007)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:990)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:969)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:677)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:884)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:957)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.fillBuffer(UncompressedSplitLineReader.java:62)
+	at org.apache.hadoop.util.LineReader.readDefaultLine(LineReader.java:227)
+	at org.apache.hadoop.util.LineReader.readLine(LineReader.java:185)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.readLine(UncompressedSplitLineReader.java:94)
+	at org.apache.hadoop.mapred.LineRecordReader.<init>(LineRecordReader.java:149)
+	at org.apache.hadoop.mapred.TextInputFormat.getRecordReader(TextInputFormat.java:67)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.liftedTree1$1(HadoopRDD.scala:288)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.<init>(HadoopRDD.scala:287)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:245)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:97)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Driver stacktrace:
+2023-06-06 17:00:31,964 INFO scheduler.DAGScheduler: Job 0 failed: countByKey at /home/pabfer19/Bicimad/bicimad.py:176, took 102,170690 s
+2023-06-06 17:00:31,971 INFO server.AbstractConnector: Stopped Spark@5879bab5{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2023-06-06 17:00:31,973 INFO ui.SparkUI: Stopped Spark web UI at http://wild.mat.ucm.es:4040
+2023-06-06 17:00:31,975 INFO cluster.StandaloneSchedulerBackend: Shutting down all executors
+2023-06-06 17:00:31,975 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Asking each executor to shut down
+2023-06-06 17:00:31,997 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+2023-06-06 17:00:32,008 WARN netty.Dispatcher: Message RequestMessage(147.96.20.35:51620, NettyRpcEndpointRef(spark://CoarseGrainedScheduler@wild.mat.ucm.es:46545), StatusUpdate(0,67,KILLED,org.apache.spark.util.SerializableBuffer@4e7271fc,Map())) dropped due to sparkEnv is stopped. Could not find CoarseGrainedScheduler.
+2023-06-06 17:00:32,016 WARN netty.Dispatcher: Message RequestMessage(147.96.20.35:51620, NettyRpcEndpointRef(spark://CoarseGrainedScheduler@wild.mat.ucm.es:46545), StatusUpdate(0,91,KILLED,org.apache.spark.util.SerializableBuffer@a3efc0e,Map())) dropped due to sparkEnv is stopped. Could not find CoarseGrainedScheduler.
+2023-06-06 17:00:32,020 INFO memory.MemoryStore: MemoryStore cleared
+2023-06-06 17:00:32,020 INFO storage.BlockManager: BlockManager stopped
+2023-06-06 17:00:32,024 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+2023-06-06 17:00:32,026 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+2023-06-06 17:00:32,037 INFO spark.SparkContext: Successfully stopped SparkContext
+Traceback (most recent call last):
+  File "/home/pabfer19/Bicimad/bicimad.py", line 458, in <module>
+    main(files, year)  # Call the main function
+  File "/home/pabfer19/Bicimad/bicimad.py", line 380, in main
+    spot_more_starts_per_day(rdd,f)  # Determine the spots with the most starts per day
+  File "/home/pabfer19/Bicimad/bicimad.py", line 176, in spot_more_starts_per_day
+    rdd_day[i] = filter_day_end(rdd, i).countByKey()
+  File "/opt/spark/current/python/pyspark/rdd.py", line 2318, in countByKey
+    return self.map(lambda x: x[0]).countByValue()
+  File "/opt/spark/current/python/pyspark/rdd.py", line 1755, in countByValue
+    return self.mapPartitions(countPartition).reduce(mergeMaps)
+  File "/opt/spark/current/python/pyspark/rdd.py", line 1250, in reduce
+    vals = self.mapPartitions(func).collect()
+  File "/opt/spark/current/python/pyspark/rdd.py", line 1197, in collect
+    sock_info = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
+  File "/opt/spark/current/python/lib/py4j-0.10.9.5-src.zip/py4j/java_gateway.py", line 1321, in __call__
+  File "/opt/spark/current/python/lib/py4j-0.10.9.5-src.zip/py4j/protocol.py", line 326, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 41 in stage 0.0 failed 4 times, most recent failure: Lost task 41.3 in stage 0.0 (TID 90) (192.168.135.23 executor 2): org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1775114561-147.96.20.35-1671636470776:blk_1073743233_2411 file=/user/pabfer19/Bicimad/201707_Usage_Bicimad.json No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK]
+	at org.apache.hadoop.hdfs.DFSInputStream.refetchLocations(DFSInputStream.java:1007)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:990)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:969)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:677)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:884)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:957)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.fillBuffer(UncompressedSplitLineReader.java:62)
+	at org.apache.hadoop.util.LineReader.readDefaultLine(LineReader.java:227)
+	at org.apache.hadoop.util.LineReader.readLine(LineReader.java:185)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.readLine(UncompressedSplitLineReader.java:94)
+	at org.apache.hadoop.mapred.LineRecordReader.<init>(LineRecordReader.java:149)
+	at org.apache.hadoop.mapred.TextInputFormat.getRecordReader(TextInputFormat.java:67)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.liftedTree1$1(HadoopRDD.scala:288)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.<init>(HadoopRDD.scala:287)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:245)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:97)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2672)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2608)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2607)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2607)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1182)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1182)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1182)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:2860)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2802)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2791)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:952)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2228)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2249)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2268)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2293)
+	at org.apache.spark.rdd.RDD.$anonfun$collect$1(RDD.scala:1021)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:406)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:1020)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:180)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1775114561-147.96.20.35-1671636470776:blk_1073743233_2411 file=/user/pabfer19/Bicimad/201707_Usage_Bicimad.json No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.135.23:9866,DS-77484d42-8005-4800-ab27-f19a873025cb,DISK]
+	at org.apache.hadoop.hdfs.DFSInputStream.refetchLocations(DFSInputStream.java:1007)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:990)
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:969)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:677)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:884)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:957)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.fillBuffer(UncompressedSplitLineReader.java:62)
+	at org.apache.hadoop.util.LineReader.readDefaultLine(LineReader.java:227)
+	at org.apache.hadoop.util.LineReader.readLine(LineReader.java:185)
+	at org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader.readLine(UncompressedSplitLineReader.java:94)
+	at org.apache.hadoop.mapred.LineRecordReader.<init>(LineRecordReader.java:149)
+	at org.apache.hadoop.mapred.TextInputFormat.getRecordReader(TextInputFormat.java:67)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.liftedTree1$1(HadoopRDD.scala:288)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.<init>(HadoopRDD.scala:287)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:245)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:97)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:106)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:65)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+
+pabfer19@wild:~/Bicimad$ 2023-06-06 17:00:32,585 INFO util.ShutdownHookManager: Shutdown hook called
+2023-06-06 17:00:32,585 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-e486dd89-f109-4b84-baa9-9d6708da7d8c/pyspark-0c1affa3-ebf6-4e30-a59b-61583bb9e2db
+2023-06-06 17:00:32,587 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-e486dd89-f109-4b84-baa9-9d6708da7d8c
+2023-06-06 17:00:32,589 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-b0a6093f-8fc8-4718-90a6-18c6214b13e5
+
+pabfer19@wild:~/Bicimad$ hdfs dfs -ls /user/pabfer19/Bicimad
+Found 27 items
+-rw-r--r--   2 pabfer19 supergroup  525311241 2023-06-05 18:20 /user/pabfer19/Bicimad/201704_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  643077714 2023-06-05 18:29 /user/pabfer19/Bicimad/201705_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  872862495 2023-06-05 18:41 /user/pabfer19/Bicimad/201706_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  827178600 2023-06-05 18:29 /user/pabfer19/Bicimad/201707_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  716171483 2023-06-05 18:21 /user/pabfer19/Bicimad/201708_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  968152595 2023-06-05 18:36 /user/pabfer19/Bicimad/201709_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  597849596 2023-06-05 18:28 /user/pabfer19/Bicimad/201710_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  127500351 2023-06-05 18:46 /user/pabfer19/Bicimad/201711_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup   95873609 2023-06-05 18:23 /user/pabfer19/Bicimad/201712_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup   97359047 2023-06-05 18:42 /user/pabfer19/Bicimad/201801_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup   85700998 2023-06-05 18:20 /user/pabfer19/Bicimad/201802_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup   79623369 2023-06-05 18:23 /user/pabfer19/Bicimad/201803_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  109780186 2023-06-05 18:46 /user/pabfer19/Bicimad/201804_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  433520208 2023-06-05 18:41 /user/pabfer19/Bicimad/201805_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  801515856 2023-06-05 18:30 /user/pabfer19/Bicimad/201806_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  981970619 2023-06-05 18:23 /user/pabfer19/Bicimad/201807_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  741272101 2023-06-05 18:24 /user/pabfer19/Bicimad/201808_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup 1120705871 2023-06-05 18:23 /user/pabfer19/Bicimad/201809_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup 1096448038 2023-06-05 18:24 /user/pabfer19/Bicimad/201810_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  832970150 2023-06-05 18:34 /user/pabfer19/Bicimad/201811_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  660487127 2023-06-05 18:21 /user/pabfer19/Bicimad/201812_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  646396121 2023-06-05 18:21 /user/pabfer19/Bicimad/201901_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  517973990 2023-06-05 18:46 /user/pabfer19/Bicimad/201902_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  198397770 2023-06-05 18:24 /user/pabfer19/Bicimad/201903_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  642034002 2023-06-05 18:29 /user/pabfer19/Bicimad/201904_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  362257296 2023-06-05 18:23 /user/pabfer19/Bicimad/201905_Usage_Bicimad.json
+-rw-r--r--   2 pabfer19 supergroup  451435629 2023-06-05 18:21 /user/pabfer19/Bicimad/201906_Usage_Bicimad.json
+pabfer19@wild:~/Bicimad$ hdfs dfs -ls 
+Found 4 items
+drwxr-xr-x   - pabfer19 supergroup          0 2023-06-05 18:51 Bicimad
+drwxr-xr-x   - pabfer19 supergroup          0 2023-06-05 16:38 Quijote_PRPA
+-rw-r--r--   2 pabfer19 supergroup      18669 2023-06-06 16:25 bicimad.py
+-rw-r--r--   2 pabfer19 supergroup    2141516 2023-06-05 16:48 quijote.txt
+pabfer19@wild:~/Bicimad$ 
+
+
