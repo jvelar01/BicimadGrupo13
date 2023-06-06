@@ -23,7 +23,7 @@ This repository contains data and scripts related to the analysis of BICIMAD, a 
 - `bicimad.py`: This Python script (inside `programa`) was utilized to extract and process the BICIMAD data using the PySpark framework. The script includes various functions and algorithms to clean, transform, and analyze the data, providing valuable insights into the usage patterns and trends of the BICIMAD system.
 It requires a folder `bicimad_data` by its side with the information we want to analyze. 
 
-- `Cluster_Ejecucion.png`: This image shows the upload and execution of the script in the Raspberries PI Cluster
+- `Ejecucion_cluster`: This txt file shows the upload and execution of the script in the Raspberries PI Cluster
 
 ## Usage
 
