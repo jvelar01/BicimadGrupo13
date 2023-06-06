@@ -41,9 +41,9 @@ git clone https://github.com/your-username/bicimad-data-analysis.git
 
 2. Ensure that you have the necessary dependencies installed, including PySpark.
 
-3. Open the `bicimad.py` script in a Python IDE or text editor to view and modify the code if needed.
+3. Open the `bicimad_cluster.py` script in a Python IDE or text editor to view and modify the code if needed.
 
-4. Go to the Bicimad public website and download a .json file with the information of a month of your liking (before 2020, as they changed the format of their data). Download the json file into the `bicimad_data` folder, which you must replace for the `bicimad_data` file (inside the folder `program`)
+4. Enter the cluster Raspberries PI.
 
 5. Execute the script using a PySpark environment to obtain insights from the BICIMAD data.
 
